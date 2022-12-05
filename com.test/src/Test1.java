@@ -36,5 +36,24 @@ public class Test1 {
         System.out.println(max);
     }
 
+    public  void arrayAssign(){//数组传递为地址传递 , 整形传递为值传递
+        int arr2[] = {3,2,1};
+        int num2 = 0;
+
+        int arr1[] = arr2;
+        int num1 = num2 ;
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.print(arr1[i]+" ");
+        }
+        System.out.println("\n"+num2);
+        for (int i = 0; i < arr2.length; i++) {
+            arr2[i] += 1;
+        }
+        num1++;
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.print(arr1[i]+" ");
+        }
+        System.out.println("\n"+num2);
+    }
 
 }

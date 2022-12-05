@@ -18,6 +18,6 @@ public class TestMain {
         }
         t1.testArray2(array);*/
 
-
+        t1.arrayAssign();
     }
 }
