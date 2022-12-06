@@ -26,6 +26,6 @@ public class TestMain {
         int arr[] = {1,2,5,6,8,9,11};
         int num = 1;
         num = t1.binarySearch(arr,num);
-        System.out.println("目标索引为"+num);
+        System.out.println("目标索引sada为"+num);
     }
 }
