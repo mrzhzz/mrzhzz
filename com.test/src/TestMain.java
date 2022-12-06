@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class TestMain {
     public static void main(String[] args) {
@@ -18,6 +19,13 @@ public class TestMain {
         }
         t1.testArray2(array);*/
 
-        t1.arrayAssign();
+        /*t1.arrayAssign();*/
+
+        /*t1.transfromString();*/
+
+        int arr[] = {1,2,5,6,8,9,11};
+        int num = 1;
+        num = t1.binarySearch(arr,num);
+        System.out.println("目标索引为"+num);
     }
 }

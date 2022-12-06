@@ -36,7 +36,7 @@ public class Test1 {
         System.out.println(max);
     }
 
-    public  void arrayAssign(){//数组传递为地址传递 , 整形传递为值传递
+    public  void arrayAssign(){//数组传递为引用传递 , 整形传递为值拷贝
         int arr2[] = {3,2,1};
         int num2 = 0;
 
@@ -56,4 +56,52 @@ public class Test1 {
         System.out.println("\n"+num2);
     }
 
+
+    public void transfromString(){//字符串与各类型互转
+        int num = 100;
+        double dou = 100.0;
+        char c = 'a';
+        String s = "" + num;
+        System.out.println(s);
+        s = "" + dou;
+        System.out.println(s);
+        s = "" + c;
+        System.out.println(s);
+        s = "" + num;
+        num = Integer.parseInt(s);
+        System.out.println(num);
+        s = "" + dou;
+        dou = Double.parseDouble(s);
+        System.out.println(dou);
+        //byte short float等类似
+        //
+    }
+
+    public int [] bubleSort(int arr[]){//冒泡排序
+        int temp;
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = 0; j < arr.length-1; j++) {
+                if(arr[j] > arr[j+1]){
+                    temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        return arr;
+    }
+
+    public int binarySearch(int []arr,int num){//有序数组的二分查找
+        int i = 0,j = arr.length-1;
+        while(i <= j){
+            if(num > arr[(i+j)/2]){
+                i = (i+j)/2 + 1;
+            } else if (num < arr[(i+j)/2]) {
+                j = (i+j)/2 - 1;
+            }else{
+                return (i+j)/2;
+            }
+        }
+        return -1;
+    }
 }
