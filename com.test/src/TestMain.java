@@ -23,9 +23,15 @@ public class TestMain {
 
         /*t1.transfromString();*/
 
-        int arr[] = {1,2,5,6,8,9,11};
+        /*int arr[] = {1,2,5,6,8,9,11};
         int num = 1;
         num = t1.binarySearch(arr,num);
-        System.out.println("目标索引sada为"+num);
+        System.out.println("目标索引sada为"+num);*/
+
+        /*int arr[][] = {{1,2,3},{3,4},{-1,-2,-3}};
+        int sum = t1.arrTest3(arr);
+        System.out.println(sum);*/
+
+        t1.yangHuiTriAngle();
     }
 }

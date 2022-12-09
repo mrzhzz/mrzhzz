@@ -104,4 +104,52 @@ public class Test1 {
         }
         return -1;
     }
+
+    public int arrTest3(int [][]arr){
+        int sum = 0;
+        for(int i=0;i< arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+                sum += arr[i][j];
+            }
+        }
+        return sum;
+    }
+
+    public void yangHuiTriAngle(){
+        int yangHui[][] = new int[10][];
+
+        /*for (int i = 0;i < 10; i++){
+            yangHui[i] = new int[i+1];
+            for (int j = 0; j <= i; j++) {
+                yangHui[i][j] = 1;
+            }
+        }
+
+        for (int i = 2; i < 10; i++) {
+            for (int j = 1; j < i; j++) {
+                yangHui[i][j] = yangHui[i-1][j] + yangHui[i-1][j-1];
+            }
+        }*/
+
+        for (int i = 0;i < 10; i++){
+            yangHui[i] = new int[i+1];
+            for (int j = 0; j <= i; j++) {
+                if(i < 2||j == 0||j == i){
+                    yangHui[i][j] = 1;
+                }
+                else {
+                    yangHui[i][j] = yangHui[i - 1][j] + yangHui[i - 1][j - 1];
+                }
+            }
+        }
+
+        for (int i = 0;i < 10; i++){
+            for (int j = 0; j <= i; j++) {
+                System.out.print(yangHui[i][j]+" ");
+            }
+            System.out.print("\n");
+        }
+    }
+
+
 }
