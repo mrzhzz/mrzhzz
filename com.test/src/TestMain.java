@@ -1,10 +1,10 @@
 import java.util.Random;
-import java.util.Scanner;
 
 public class TestMain {
     public static void main(String[] args) {
-        Test1 t1 = new Test1();
+        TestMethod t1 = new TestMethod();
         Random ra = new Random();
+        TestMethodAndField1 t2 = new TestMethodAndField1();
 
         /*t1.hello();*/
 
@@ -32,6 +32,25 @@ public class TestMain {
         int sum = t1.arrTest3(arr);
         System.out.println(sum);*/
 
-        t1.yangHuiTriAngle();
+        /*t1.yangHuiTriAngle();*/
+
+
+        //包装类，暂时没学
+        //输出：
+        //false
+        //true
+        //==为比较地址是否相同，不同类地址显然不同，equals则是类中的方法，该类的equals为值的比较
+        /*Integer a = new Integer(10);
+        Integer b = new Integer(10);
+        System.out.println(a == b);
+        System.out.println(a.equals(b));*/
+
+        /*TestMethodAndField1 t = new TestMethodAndField1();
+        Test tt = new Test();
+        System.out.println(tt.flag);
+        t.method3(tt);
+        System.out.println(tt.flag);*/
+
+
     }
 }

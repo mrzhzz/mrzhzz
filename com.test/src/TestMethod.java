@@ -1,5 +1,5 @@
-public class Test1 {
-    Test1(){}
+public class TestMethod {
+    TestMethod(){}
     public void hello(){
 
         System.out.println("hello,git");
