@@ -1,7 +1,9 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class TestMain {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         TestMethod t1 = new TestMethod();
         Random ra = new Random();
         TestMethodAndField1 t2 = new TestMethodAndField1();
@@ -50,6 +52,12 @@ public class TestMain {
         System.out.println(tt.flag);
         t.method3(tt);
         System.out.println(tt.flag);*/
+
+        /*for (int i = 0; i < 99; i++) {
+            System.out.println(t1.fibonacci(i));
+        }*/
+
+        System.out.println(t1.monkeyEat(10));
 
 
     }

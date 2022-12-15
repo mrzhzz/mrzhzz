@@ -152,4 +152,27 @@ public class TestMethod {
     }
 
 
+    public int fibonacci(int num){//斐波那契数列
+
+        if (num > 2) {
+            return fibonacci(num - 1) + fibonacci(num - 2);
+        }else if(num > 0 ){
+            return 1;
+        }
+        return -1;
+    }
+
+
+    public int monkeyEat(int day){
+
+        if (day > 1){
+            int num = 2 * (monkeyEat(day-1) + 1);
+            System.out.println(num);
+            return num;
+        } else if (day == 0) {
+            return 1;
+        }
+        return -1;
+    }
+
 }
